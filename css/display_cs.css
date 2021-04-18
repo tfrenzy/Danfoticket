@@ -1,0 +1,623 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* === Reset */
+*{margin:0px;padding:0px}
+
+/* === Template structure */
+div.VC-container{background:#000 url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/container_bg.gif) repeat-x top left;float:left;margin:0;width:100%}
+div.VC-page{width:990px;margin:0 auto 0 auto} 
+div.VC-header{width:100%;float:left}
+div.VC-siteWideHeaderLeft{float:left}
+div.VC-siteWideHeaderRight{float:right}
+div.VC-lowerHeader{float:left;background:url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/header_bg.gif) repeat;width:100%;position:relative;height:11.0em;z-index:70}
+div.VC-breadcrumbs,div.VC-breadcrumb{width:100%;float:left;z-index:10}   
+div.VC-footer{width:100%;float:left}
+div.VC-navigation{float:left}
+div.VC-leftNavigation{width:198px;float:left;background:#fff url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/corporate_right_column_bg.gif) repeat-y}
+div.VC-pageBody{width:100%;float:left;padding-bottom:30px;background:#fff url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/corporate_right_column_bg.gif) repeat-y}
+div.VC-mainContent{width:554px;float:left;margin-left:20px}
+div.VC-featureColumn{width:198px;float:left;margin-left:20px;_margin-left:0;padding-top:23px;background:url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/white-top-column_bg.gif) repeat-x top}
+
+/* === Font size */ 
+/* Default 12px font size */
+/* specified in font-base_cs.css */
+
+/* Font size overwrites */
+
+/* displayed at 10px */
+.VC-mainContent th{font-size:0.8333em}
+/* displayed at 11px */
+.VC-siteWideHeaderRight ul li a, .VC-footer .lowerFooter, .VC-links ol li a, .VC-sitewideSearch input, th, #tooltip .body{font-size:0.9166em}
+/* displayed at 12px */
+#tooltip h3, .VC-navigation .rollovermenu li ul li a,.VC-mainContent .smallText,.VC-footer .copyRightDisclaimer{font-size:1em}
+.VC-mainContent td.firstCol .smallText{font-size:0.86em}
+/* displayed at 13px */
+.VC-mainContent .summary, .VC-navigation .rollovermenu a{font-size:1.0833em}
+/* displayed at 14px */
+h5, h6, a.loginButton, .VC-mainContent td.firstCol{font-size:1.1666em}
+/* displayed at 16px */ 
+h3{font-size:1.3333em}
+/* displayed at 12px */
+h4{font-size:1em}
+/* displayed at 20px */
+h2, .subH1, .subHeading{font-size:1.6666em}
+/* displayed at 28px */
+h1, .hOne{font-size:2.3333em;width:505px}
+
+/* == line-height */
+.VC-mainContent p, .VC-mainContent blockquote{line-height:16px}
+.VC-mainContent ul, .VC-mainContent ol{line-height:16px}/* Remaining 8 pixels are added in li*/
+
+/* Sub logo - Navigation image */
+.VC-logo{width:103px}
+
+/* === Global styles */ 
+body{margin:0;background-color:#000}
+body,input,textarea,select{font-family:Arial,sans-serif}
+input,textarea{background-attachment:fixed}
+img,fieldset{border:none}
+a:link{color:#000}
+.lowerFooter a:link,.lowerFooter a,.lowerFooter a:visited{color:#b2b2b2}
+/* These will affect all the component in the main areas */
+.VC-pageBody{background-color:#fff;color:#333;word-wrap:break-word}
+.VC-pageBody a{color:#333;border-bottom:#cacaca solid 1px;text-decoration:none}
+.VC-pageBody a:hover{border-bottom-color:#000;color:#000}
+.VC-pageBody a img{border:none}
+.VC-pageBody a:hover img{border:none}
+.VC-mainContent h1,hOne, .subH1, .subHeading{font-family:"Helvetica Neue 45 Light",Arial,sans-serif}
+.VC-mainContent h1,.hOne,h2{color:#000;font-weight:normal}
+.VC-mainContent h3{color:#707070;padding-bottom:5px}
+.VC-mainContent h4{color:#333333;font-weight:700}
+.VC-mainContent h5 .VC-mainContent h6{color:#1c1c1c}
+.VC-mainContent ol{margin-left:22px;margin-bottom:10px}
+.VC-mainContent ul{margin:0 0 10px 16px;padding:0}
+.VC-mainContent ul li, .VC-featureColumn ul li{list-style-image:url(/dafiles/Internet/mgl/com/furniture/images/icons/list_style_image_icon.gif)}
+.VC-featureColumn ul li{padding-bottom:10px}
+.VC-mainContent ul li{margin-bottom:8px}
+.VC-mainContent ul.linkList{margin-left:13px}
+.VC-mainContent ul.linkList li, .VC-featureColumn ul.linkList li{list-style:none;list-style-image:none;margin-left:10px;margin-left:0px;padding-left:3px;position:relative}
+.linkListIcon{display:inline-block;height:7px;width:4px;background: url(/dafiles/Internet/mgl/com/furniture/images/icons/call_to_action_arrow_icon.gif) no-repeat left top;position:absolute;left:-10px;top:4px}
+.VC-mainContent p{margin-bottom:15px}
+.VC-mainContent table{border-collapse:collapse;border-top:1px solid #adadad;width:100%;margin:10px 0px;padding:0px}
+.VC-mainContent th{color:#515151;border-bottom:1px solid #adadad;padding:8px 15px;text-align:left;text-transform:uppercase}
+.VC-mainContent td{border-bottom:1px solid #D6D6D6;padding:12px 12px}
+.VC-mainContent .firstCol{background-color:#f6f6f6;color:#000}
+.VC-mainContent .tableSubHeader{background-color:#fff;color:#000;font-weight:bold}
+.VC-mainContent address{font-style:normal}
+.VC-mainContent blockquote{margin-left:20px}
+.VC-mainContent .normalField{text-align:left}
+.VC-mainContent .smallText{color:#666}
+.VC-mainContent .subH1{color:#333333;line-height:20px;margin-bottom:20px}
+.VC-mainContent .subHeading{color:#0087cf;margin-bottom:25px}
+.VC-mainContent .summary{color:#666;line-height:18px;margin-bottom:20px}
+.VC-pageBody input{vertical-align:middle}
+.VC-pageBody input.searchButton{height:25px;padding:0px}
+.VC-mainContent .VC-article{margin-bottom:15px;float:left}
+.required{background:url(/dafiles/Internet/mgl/com/furniture/images/icons/required_asterisk_icon.gif) no-repeat;padding-left:10px}
+.hide{display:none}
+.alignRight{float:right}
+.alignLeft{float:left}
+.paddedObject{margin:25px 0 10px 10px}
+/* Back to top link */
+.backToTopLink{clear:both;padding:10px 0px}
+.backToTopLink a{color:#666}
+/* Call to Action */
+.callToAction{margin-top:15px}
+.callToAction span{background:url(/dafiles/Internet/mgl/com/furniture/images/icons/call_to_action_arrow_icon.gif) no-repeat left top;margin-right:10px;width:4px;height:7px;vertical-align:middle;display:inline-block;background-position:0px 0px}
+.VC-featureColumn .callToAction span{margin-right:7px}
+.product-category-item .callToAction{position:absolute;bottom:0;left:0}
+* html .callToAction span{vertical-align:-5px}
+/* Add Icons */
+a.documentLink:hover .documentLinkIcon{background-position:0px -20px}
+.documentLinkIcon{background:url(/dafiles/Internet/mgl/com/furniture/images/icons/icon_sprite.gif) no-repeat 0 0;display:inline-block;height:16px;margin-right:10px;width:13px}
+a.externalLink:hover .externalLinkIcon{background-position:-20px -20px}
+.externalLinkIcon{background:url(/dafiles/Internet/mgl/com/furniture/images/icons/icon_sprite.gif) no-repeat -20px 0px;display:inline-block;height:11px;margin-left:3px;width:17px}
+.VC-pageBody a.removeUnderline,.VC-pageBody .removeUnderline:hover,.VC-pageBody .removeUnderline:active,.VC-pageBody .removeUnderline:link{text-decoration:none;border:none}
+
+
+/* === Corporate left navigation */
+.csMenuJs OL LI{float:left;margin-top:1px;margin-right:2px}
+.csMenuJs OL LI A{padding-left:2px}
+.csMenuJs UL LI A{color:#333;text-decoration:none;border-bottom:none;display:block;margin-bottom:3px}
+.csMenuJs UL UL LI OL{padding-left:13px}
+.csMenuJs UL UL UL LI OL{padding-left:22px}
+.csMenuJs UL LI OL LI.channelLink{padding-left:0;width:156px;margin-top:4px;margin-bottom:0}
+.cNavMenuImage{cursor:pointer}
+.csMenu UL{float:left;margin:0;padding:0}
+.csMenu UL LI{float:left;width:198px;background-color:#bfbfbf;padding:6px 0 0}
+.csMenu ul{list-style-type:none;margin:0;padding:0}
+.csMenu ul li{background-image:url(/dafiles/Internet/mgl/com/furniture/images/icons/nc_gt_menu_cs-BM.gif);background-repeat:no-repeat;background-position:0 6px}
+.csMenu ul li a{padding-left:10px}
+.csMenu ul li ul li{background-position:12px 6px}
+.csMenu ul li ul li ul li{background-position:24px 6px}
+.csMenu ul li ul li ul li ul li{background-position:36px 6px}
+.csMenu li#selectedElement{background-image:url(/dafiles/Internet/mgl/com/furniture/images/icons/nc_gt_menu_white_cs-BM.gif)}
+.csMenu UL UL LI OL{padding-left:23px}
+.csMenu UL UL UL UL LI OL{padding-left:43px}
+.csMenu UL LI OL LI.channelLink{padding-left:0;width:156px}
+.csMenu A{margin-left:12px;display:list-item;border-bottom:0;padding-bottom:1px;margin-top:4px}
+.csMenu UL UL A{margin-left:24px}
+.csMenu UL UL UL A{margin-left:36px}
+.csMenu UL UL UL UL A{margin-left:48px}
+.csMenu UL LI#selectedElement UL LI A{color:#505050}
+.csMenu UL UL LI A:hover{color:#ADADAD}
+.csMenu UL LI#selectedElement A:hover{color:#D1D1D1}
+.csMenu UL LI#selectedElement UL LI A:hover{color:#8A8A8A}
+.csMenuJs,.csMenu{width:198px;background-color:#fff}
+.csMenuJs LI,.csMenu LI{list-style-type:none;margin:0;padding:0}
+.csMenuJs UL,.csMenuJs OL,.csMenu OL{float:left;margin:0;padding:0}
+.csMenuJs UL LI,.csMenu OL LI{float:left}
+.csMenuJs UL LI DIV,.csMenu UL LI DIV{float:left;width:198px}
+.csMenuJs .title,.csMenu .title{padding:3px 8px 4px 20px;font-size:1.17em;font-family:"Helvetica Neue 45 Light",Arial}
+.csMenuJs UL LI#selectedElement LI DIV A,.csMenu UL LI A,.csMenu UL LI#selectedElement LI DIV A{color:#505050;text-decoration:none}
+.csMenuJs UL LI DIV.containerDiv,.csMenu UL LI DIV.containerDiv{width:198px;background-color:#bfbfbf;padding:0;padding-bottom:1px}
+.csMenuJs UL UL LI DIV.containerDiv,.csMenu UL UL LI DIV.containerDiv,.csMenu UL UL LI{background-color:#d9d9d9}
+.csMenuJs UL UL LI#selectedElement > DIV.containerDiv,.csMenuJs UL UL UL LI#selectedElement > DIV.containerDiv,.csMenu UL LI#selectedElement{background-color:#000}
+.csMenuJs UL UL UL LI DIV.containerDiv,.csMenu UL UL UL LI DIV.containerDiv,.csMenu UL UL UL LI{background-color:#efefef}
+.csMenuJs UL UL UL UL LI DIV.containerDiv,.csMenu UL UL UL UL LI DIV.containerDiv,.csMenu UL UL UL UL LI{background-color:#fff}
+.csMenuJs UL LI OL,.csMenu UL LI OL{padding-left:3px}
+.csMenuJs UL UL UL UL LI OL,.csMenu UL UL UL LI OL{padding-left:38px}
+.csMenuJs UL UL LI OL LI.channelLink,.csMenu UL UL LI OL LI.channelLink{width:141px}
+.csMenuJs UL UL UL LI OL LI.channelLink,.csMenu UL UL UL LI OL LI.channelLink{width:122px}
+.csMenuJs UL UL UL UL LI OL LI.channelLink,.csMenu UL UL UL UL LI OL LI.channelLink{width:109px}
+.csMenuJs UL LI DIV.csMouseOver,.csMenuJs UL UL LI DIV.csMouseOver,.csMenuJs UL UL UL LI DIV.csMouseOver,.csMenuJs UL UL UL UL LI DIV.csMouseOver,.csMenu UL LI DIV.csMouseOver,.csMenu UL UL LI DIV.csMouseOver,.csMenu UL UL UL LI DIV.csMouseOver,.csMenu UL UL UL UL LI DIV.csMouseOver{background-color:#666}
+.csMenuJs UL LI DIV.csMouseOver A,.csMenuJs UL LI#selectedElement LI DIV.csMouseOver A,.csMenu UL LI DIV.csMouseOver A,.csMenu UL LI#selectedElement LI DIV.csMouseOver A,.csMenu UL LI A:hover{color:#fff}
+.csMenuJs UL LI#selectedElement DIV A,.csMenu UL LI#selectedElement DIV A,.csMenu UL LI#selectedElement A{color:#fff}
+.csMenuJs UL LI UL,.csMenuJs UL LI#selectedElement UL UL,.csMenu UL LI UL,.csMenu UL LI#selectedElement UL UL{display:none}
+.csMenuJs UL UL.selectedElementParent,.csMenuJs UL LI#selectedElement UL,.csMenu UL UL.selectedElementParent,.csMenu UL LI#selectedElement UL{display:block}
+
+/* === Round Corners */
+.rc1, .rc2, .rc3, .rc4{font-size:1px;overflow:hidden;display:block}
+.rc1{height:1px;background:red;margin:0 5px}
+.rc2{height:1px;background:red;margin:0 3px}
+.rc3{height:1px;background:red;margin:0 2px}
+.rc4{height:2px;background:red;margin:0 1px}
+
+/* === Striped Table */
+tr.odd{background:#f7f7f7}
+tr.even{background:#fff}
+
+/* === Remove borders */
+.VC-mainContent table.noBorders, .VC-mainContent table.noBorders td,.VC-mainContent td.noBorders,.VC-mainContent a.noBorders,.VC-pageBody a.noBorders{border:none}
+
+/* === Breadcrumb */
+.VC-breadcrumbs,.VC-breadcrumb{width:990px;background-color:#fff}
+.siteBreadCrumb{color:#666;margin:10px 0 0 19px;padding-bottom:1px;height:30px}
+.siteBreadCrumb a{color:#666;text-decoration:none;line-height:1.5em;margin-bottom:4px}
+.siteBreadCrumb a:hover{color:#333;border-bottom:1px solid #000}
+.siteBreadCrumb span{padding:0 0 0 6px;margin-right:3px;vertical-align:top}
+.siteBreadCrumb .breadcrumbLabel{padding:0;vertical-align:text-bottom;display:inline-block;margin-top:2px}
+
+/* === Feature Column */
+.featureColumnElement{width:178px;padding:10px;margin:0;word-wrap:break-word}
+
+.featureColumnElement .elementBody h3{font-size:1.3333em;color:#1c1c1c;padding-bottom:10px}
+.featureColumnElement .elementBody h2{color:#272727}
+.featureColumnElement .elementBody p{color:#272727;padding:2px 0px}
+.featureColumnElement .elementBody ul{padding:2px 10px}
+.RHS-Login{background-color:#e2e2e2;border:none;padding:10px}
+
+/* === Tooltip */
+#tooltip{position:absolute;z-index:100;border:1px solid #111;background-color:#eee;padding:5px;opacity:0.85}
+#tooltip h3, .tooltip div{margin:0}
+#tooltip h3{font-weight:bold}
+
+/* === Site Wide Navigation */
+.VC-siteWideHeaderRight ul{position:relative;list-style-type:none;margin:0;padding:0;z-index:80}
+.VC-siteWideHeaderRight ul li{position:relative;display:inline;float:left;margin:0;padding:0}
+.VC-siteWideHeaderRight ul li a{color:#fff;display:block;margin-left:1px;margin-right:1px;padding:10px 5px 8px 11px;text-decoration:none}
+.VC-siteWideHeaderRight ul li a.selected{background:#242424;border-left:1px solid #787878;border-right:1px solid #787878;margin:0px}
+.VC-siteWideHeaderRight ul li ul{display:none;position:absolute;background:#242424;border:1px solid #787878;border-top:none;padding:7px;padding-left:5px}
+.VC-siteWideHeaderRight ul li ul li a{width:115px;padding:2px 5px;background-color:#242424}
+.VC-siteWideHeaderRight ul li ul li a:hover{color:#fff;background:#4d4d4d;text-decoration:none}
+.ddshadow{position:absolute;left:0;top:0;width:0;height:0;visibility:hidden}
+.toplevelshadow{opacity:0.8}
+.rightarrowclass{position:absolute;right:5px;top:6px}
+.downarrowclass{position:absolute;right:7px;top:15px}
+/*IE6 hack to get sub menu links to behave correctly*/
+* html .VC-siteWideHeaderRight{height:1%}
+/* The top position on the downarrowsclass on the sitewide navigation is overwritten in utilities.js */
+* html .VC-siteWideHeaderRight ul li a{display:inline-block}
+
+/* === Portal Navigation */
+.VC-links ol{margin:0;padding:0}
+.VC-links ol li a{color:#fff;display:block;padding:9px 10px;text-decoration:none}
+.VC-links ol li a ins{text-decoration:none}
+.VC-links ol a:hover, .VC-links ol li a.selected{background:url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/sidewide_button_hover_effect.gif) repeat-x}
+.VC-links ol a:hover ins, .VC-links ol li a.selected ins{border-bottom: 2px solid #4D4D4D;padding-bottom:2px}
+.VC-links ol li{display:inline;float:left}
+.VC-links ol li.spacer{background:url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/sitewide_link_spacer.gif) no-repeat right 12px;height:32px}
+
+/* === Sitewide Search */
+.VC-sitewideSearch{float:left;margin:0;padding:5px 0px 5px 6px}
+.VC-sitewideSearch input{border:#979797 solid 1px;color:#616161;float:left;margin:0;padding:3px 0px 0px 3px;height:15px;width:102px}
+.VC-sitewideSearch input.searchImage{border:none;height:20px;width:26px;padding:0px}
+.VC-siteWideHeaderRight .VC-sitewideSearch a{float:left;padding:0;margin:0}
+div.VC-searchResultsSummary{margin:15px 0 20px 0;background-color:#eee;padding:10px 20px 5px 20px}
+.VC-seacrhResultsIframe{border:none;height:950px;width:100%}
+
+/* === International Sites */
+.VC-internationalSites {position:relative}
+.VC-internationalSites .globeIcon{position:absolute;top:10px;left:12px}
+.VC-internationalSites a.menuLink {padding-left:29px}
+.VC-subnavTable{padding:0px;width:100%}
+.VC-subnavTable th{color:#fff;padding-bottom:5px;text-align:left;font-weight:normal}
+.VC-internationalSites .VC-subnavTable a{width:134px;padding:1px 0px;margin:0}
+.VC-internationalSites span{background-image:url(/dafiles/Internet/mgl/com/furniture/images/icons/international_flags_icon.gif);background-repeat:no-repeat;width:16px;height:11px;margin:0px 8px 0px 5px;vertical-align:-2px;display:inline-block}
+.AE_flag{background-position:0 0}
+.AT_flag{background-position:-20px 0}
+.AU_flag{background-position:-40px 0}
+.BR_flag{background-position:-60px 0}
+.CA_flag{background-position:-80px 0}
+.CH_flag{background-position:-100px 0}
+.CN_flag{background-position:-120px 0}
+.DE_flag{background-position:-140px 0}
+.FR_flag{background-position:-160px 0}
+.GB_flag{background-position:-180px 0}
+.HK_flag{background-position:-200px 0}
+.ID_flag{background-position:-220px 0}
+.IE_flag{background-position:-240px 0}
+.IN_flag{background-position:-260px 0}
+.JP_flag{background-position:-280px 0}
+.KR_flag{background-position:-300px 0}
+.MX_flag{background-position:-320px 0}
+.MY_flag{background-position:-340px 0}
+.NL_flag{background-position:-360px 0}
+.NZ_flag{background-position:-380px 0}
+.PH_flag{background-position:-400px 0}
+.SE_flag{background-position:-420px 0}
+.SG_flag{background-position:-440px 0}
+.TH_flag{background-position:-460px 0}
+.TW_flag{background-position:-480px 0}
+.US_flag{background-position:-500px 0}
+.ZA_flag{background-position:-520px 0}
+
+/* === International Sites Directory */
+.internationalSitesDirectory span{background-image:url(/dafiles/Internet/mgl/com/furniture/images/icons/international_flags_icon.gif);background-repeat:no-repeat;width:16px;height:11px;margin:0px 8px 0px 5px;vertical-align:-2px;display:inline-block}
+.internationalSitesDirectory .column1{float:left;width:49%}
+.internationalSitesDirectory .column2{float:right;width:49%}
+.internationalSitesDirectory ul{margin-left:5px}
+.internationalSitesDirectory ul li{list-style:none;padding-bottom:10px;list-style-image:none}
+.internationalSitesDirectory img{padding:2px 10px 2px 2px}
+.internationalSitesDirectory a{vertical-align:top}
+
+/* === Logo site */
+.VC-logo{float:left}
+.VC-logo img{border:none;float:left}
+
+/* === Font Resize Tool */
+.VC-fontResizeTool{position:absolute;top:30px;left:907px;display:none}
+.VC-fontResizeTool a{float:left;width:18px;height:18px;display:block;margin:3px;background:url(/dafiles/Internet/mgl/com/furniture/images/icons/font_resize_icon.gif) 0px 0px no-repeat;text-decoration:none}
+.VC-fontResizeTool a.smallFont{background-position:0px 0px}
+.VC-fontResizeTool a.defaultFont{background-position:-18px -23px}
+.VC-fontResizeTool a.largeFont{background-position:-36px 0px}
+
+/* === Site Wide Login */
+.VC-siteWideLogin{position:absolute;top:60px;left:735px;width:240px;text-align:right;color:#575757}
+.VC-siteWideLogin a{color:#fff}
+
+/* === Portal Navigation */
+/* Due to the limitations of IE the rollover menu is */
+/* controlled by JS in utilities.js */
+.VC-navigation{
+	width:887px;
+	height:28px;
+	background:url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/primary_nav_bg.gif) repeat-x;
+	position:absolute;
+	bottom:0;
+	left:103px;
+	visibility: visible;
+}
+.VC-navigation .rollovermenu a{color:#fff;display:block;padding:5px 18px 7px 20px;text-decoration:none}
+.VC-navigation .rollovermenu a.header{background:url(/dafiles/Internet/mgl/com/furniture/images/icons/portal_nav_down_arrow_icon.gif) no-repeat right 11px}
+.VC-navigation .rollovermenu li{
+	float:left;
+	position:relative;
+	list-style-type:none;
+	visibility: visible;
+}
+.VC-navigation .rollovermenu li:hover a.header{background-color:#eae9e9 !important;color:#000 !important}
+.VC-navigation .rollovermenu li ul{
+	background-color:#eae9e9;
+	position:absolute;
+	left:-9999px;
+	top:28px;
+	padding:17px 0px 8px 0px;
+	visibility: visible;
+}
+.VC-navigation .rollovermenu li:hover ul{left:0px}
+.VC-navigation .rollovermenu li ul li{float:none;width:150px}
+.VC-navigation .rollovermenu li ul li a{border:none;color:#525252;padding:0px 20px 6px 20px}
+.VC-navigation .rollovermenu li ul li a:hover{color:#000;text-decoration:underline}
+.VC-navigation .rollovermenu a.overview{background:none;padding-left:20px;padding-right:20px}
+.VC-navigation .rollovermenu a.current{background-color:#fff;color:#000}
+.ddsLeft, .ddsRight, .ddsBottom{
+	position:absolute;
+	visibility: visible;
+}
+.ddsLeft, .ddsRight{background:url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/drop_down_shadow_bg.png);top:0px;width:5px}
+.ddsLeft{background-position:0px 0px;left:-5px;top:-28px}
+.ddsRight{background-position:-5px 0px}
+.ddsBottom{background:url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/drop_down_shadow_bottom_bg.png);font-size:0px;height:5px}
+.ddsLeftCorner, .ddsRightCorner{
+	background:url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/drop_down_shadow_bg.png) no-repeat;
+	height:5px;
+	position:absolute;
+	width:5px;
+	visibility: visible;
+}
+.ddsLeftCorner{background-position:-10px 0px;left:-5px}
+.ddsRightCorner{background-position:-15px 0px}
+.rightToLeft .ddsLeft{top:0px}
+.rightToLeft .ddsRight{top:-28px}
+.ddsLeft{_left:-1px}
+.ddsLeft, .ddsRight{_width:1px}
+.ddsBottom{_height:1px;_overflow:hidden}
+.ddsLeftCorner, .ddsRightCorner{_display:none}
+
+/* === Footer area */
+.VC-footer .upperFooter{color:#fff;padding:5px 15px}
+.VC-footer .lowerFooter{color:#b2b2b2;padding:5px 15px}
+.VC-footer{background:url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/com-footer_portal_bg.gif) top repeat-x;margin-right:-3px}
+.VC-footer .lowerFooter ul{list-style:none}
+.VC-footer .footerLinks{padding:16px 0px 3px 0px}
+.VC-footer .footerLinks ul li{background:url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/footer_link_spacer.gif) no-repeat right center;display:inline;list-style-type:none;padding:0px 12px 0px 8px}
+.VC-footer .footerLinks ul li a{color:#fff;text-decoration:none;text-transform:capitalize}
+.VC-footer .footerLinks ul li a:hover{border-bottom:1px #b2b2b2 solid}
+.VC-footer .footerLinks .firstLink{padding-left:0px}
+.VC-footer .footerLinks .lastLink{background:none}
+.VC-footer .copyRightDisclaimer{color:#FFFFFF}
+.lowerFooter p{padding:5px 0px}
+.VC-footer ol{padding-left:22px}
+
+/* === Popup */
+.VC-popupMain{clear:both;width:100%}
+.VC-popupMain .VC-mainContent{background-color:#fff;float:none;margin:0px;padding:20px;width:auto}
+
+/* === Lightbox */
+#TB_HideSelect{z-index:89}
+#TB_overlay{z-index:90}
+#TB_window{border:none;background:none;z-index:92;top:50%}
+#TB_load{z-index:93}
+#TB_ajaxContent{border:none;background:none}
+.VC-modalLightbox{background:#fff;width:100%}
+.VC-modalLightbox .modalHeader{background-color:#2D2D2D;height:85px;position:relative}
+.VC-modalLightbox .modalLogo{background:url(/dafiles/Internet/mgl/com/furniture/images/logos/macquarie_lightbox_logo.gif) no-repeat;position:absolute;top:5px;left:10px;width:217px;height:75px}
+.VC-modalLightbox .modalBody{padding:10px}
+.VC-modalLightbox a.modalCloseBt{background:url(/dafiles/Internet/mgl/com/furniture/images/icons/close_icon.gif) no-repeat;position:absolute;top:5px;right:10px;width:16px;height:16px}
+.VC-modalLightbox a.modalCloseBt:hover{background-position:0px -21px}
+.VC-modalLightbox .modalDecorBanner{background:url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/lb_decor_banner_bg.gif) repeat-x;height:7px}
+
+/* === Login lightbox */
+#VC-loginLightbox{color:#000}
+#VC-loginLightbox h2{padding-bottom:5px}
+#VC-loginLightbox h3{color:#fff;display:block;background-color:#5B5B5B;padding:2px}
+#VC-loginLightbox a{color:#000;display:block;text-decoration:none}
+#VC-loginLightbox a:hover{color:#D40162;display:block;text-decoration:none}
+#VC-loginLightbox .appsList ul{margin:0;padding:0px}
+/* .appsList li background-color:is also set in the javascript due to IE not supporting :hover */
+#VC-loginLightbox .appsList li{background-color:#5B5B5B;list-style-type:none;padding-left:20px;display:block}
+#VC-loginLightbox .appsList li a{color:#fff;display:block;text-decoration:none}
+#VC-loginLightbox .appsList li a:hover{color:#fff}
+#VC-loginLightbox .appsList li a:visited{color:#fff}
+div.VC-container{margin-right:-3px}/*This is to fix IE6 Duplicate Characters Bug - content repeated at the bottom of the page
+
+/* === Product category */
+.VC-product-category{width:554px}
+.VC-product-category div.product-category-item{float:left;height:13.33em;margin-top:20px;padding-right:20px;width:257px; position:relative;}
+.VC-product-category div.product-category-item img{margin-left:0}
+.VC-product-category div.product-category-item li a{margin-left:0}
+.VC-mainContent .product-category-item h2{border-bottom:#d6d6d6 solid 1px;margin-bottom:5px;padding-bottom:7px}
+#VC-productSearchHeading{font-size:1.33em;color:#707070;padding-bottom:5px}
+
+/* === Comparison table */
+table.productComparison thead tr .header{background-image:url(/dafiles/Internet/mgl/com/furniture/images/icons/sort_arrow_icon.gif);background-repeat:no-repeat;background-position:center right;cursor:pointer}
+table.productComparison thead tr th.firstCol{background-color:transparent}
+table.productComparison thead tr th.headerSortUp{background-image:url(/dafiles/Internet/mgl/com/furniture/images/icons/sort_arrow_asc_icon.gif);background-color:#f6f6f6}
+table.productComparison thead tr th.headerSortDown{background-image:url(/dafiles/Internet/mgl/com/furniture/images/icons/sort_arrow_desc_icon.gif);background-color:#f6f6f6}
+table.productComparison{border-bottom:1px #adadad solid}
+table.productComparison th{text-align:left;padding-left:10px}
+div.VC-singleProduct{border-bottom:1px solid #D6D6D6;border-top:1px solid #D6D6D6;margin-top:10px;padding:12px}
+table.VC-productComparisonSingle{width:60%}
+
+/* === Compact rates table */
+.VC-compactTable td{padding:6px;border: 1px solid #D6D6D6}
+.VC-compactTable th{padding:10px;border: 1px solid #D6D6D6;border-bottom: 1px solid #aaa}
+.VC-compactTable {border: 1px solid #666}
+.textAlignCenter{text-align:center}
+
+/* === Product finder */
+.VC-productFinder{font-weight:bold;padding:8px 0;background-color:#f6f6f6;border-top:1px solid #b8b8b8;margin-bottom: 20px;float:left;width:100%}
+.VC-productFinder form{margin-left:20px}
+.VC-productFinder .button{color:#fff;background-color:#535353;border:none;padding:3px 6px}
+#VC-catFindResults .alignRight{float:right}
+
+/* === Closed products */
+.VC-closedProducts{float:left;width:100%;background-color:#f6f6f6;border:1px solid #b8b8b8;border-left:none;border-right:none;padding:18px 0 5px 0;margin-top:10px}
+.VC-closedProducts p{margin-left:20px;color:#5d5d5d;font-size:1.166em;font-weight:700}
+
+/* === Article List */
+.VC-articleList .articleList{padding:20px}
+.VC-articleList ul{list-style:none}
+.VC-articleList ul li{padding:0px 10px 10px 10px}
+.VC-articleList span{margin:0px;padding:0px;color:#808080}
+.VC-articleList span.date{padding-left:10px}
+.VC-articleList span.time{padding-left:10px}
+
+/* === Pagination */
+.VC-pagination{margin-left:auto;margin-right:auto;background:#F1F1F1;float:left;padding-top:5px;height:2.1em;width:100%}
+.VC-pagination div{float:left;text-align:center;width:90%}
+.VC-pagination div a{display:inline;padding:5px;color:#000;border:none;text-decoration:underline}
+.VC-pagination div a:visited{color:#000}
+.VC-pagination div a.current{text-decoration:none;font-weight:bold}
+.VC-pagination div a.arrows{color:#0070C0}
+.VC-pagination div a.arrows:visited{color:#0070C0}
+.VC-pagination select{float:right;margin-right:5px}
+
+/* === Sub channel summary table */
+.VC-subChannelSummaryLink{text-align:right;margin-right:20px}
+
+/* Graphic select */
+div.selectbox-wrapper {position: absolute;width: 246px;background-color: white;border: 1px solid #ccc;margin:-2px 0 0 2px;padding: 0px;max-height: 200px;overflow: auto;z-index:100}
+div.selectbox-wrapper ul li.selected {background-color: #FFFFFF}
+div.selectbox-wrapper ul li {list-style: none;list-style-image:none;list-style-type:none;display: block;margin:0 0 0 8px;padding: 2px;cursor: pointer}
+.selectbox {margin: 0px 5px 10px 0px;padding-left: 2px;width: 246px;display: block;background: url('/dafiles/Internet/mgl/com/furniture/images/buttons/select_bt.gif') right; cursor: pointer}
+.selectbox select { background: url('/dafiles/Internet/mgl/com/furniture/images/buttons/select_bt.gif') right}
+.VC-pageBody .featureColumnElement .elementBody input.selectbox,.VC-pageBody .VC-mainContent input.selectbox {border: none;height: 19px;padding: 5px 0 1px 10px;width:246px}
+
+/* === Pagetools */
+.VC-pagetools{position:relative;left:534px;top:28px;width:40px;margin-top:4px}
+.VC-pagetools a{text-decoration:none;border:none}
+.VC-pagetools a:hover{text-decoration:none}
+.VC-pagetools a:visited{text-decoration:none}
+.VC-pageToolsForm{color:#666;background-color:#f3f3f3;margin-bottom:1px;padding:28px 0 18px 28px}
+.VC-pageToolsForm table{border:none;margin:0 0 10px 0}
+.VC-pageToolsForm td{border:none;vertical-align:top;padding:3px 0px}
+.VC-pageToolsForm .mandatory{color:#dc1d00}
+.VC-pageToolsForm .subHead{font-size:1.49em;color:#707070}/*18px*/
+.VC-pageToolsForm .requiredFields{color:#777;font-weight:700;background:url(/dafiles/Internet/mgl/com/furniture/images/icons/asterisk_icon.gif) no-repeat left;padding-left:14px}
+.VC-pageToolsForm .formTitleText{font-weight:bold;margin-bottom:15px}
+.VC-pageToolsForm .rightAlign{padding-right:10px;text-align:right;width:210px}
+.VC-pageToolsForm textarea,input.defaultInputSize,input.smallInputSize,input.mediumInputSize,input.largeInputSize{font-weight:700;color:#000}
+.VC-pageToolsForm h2{color:#000}
+input.defaultInputSize{padding:6px;width:242px;height:18px;border:none; background:#fff url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/form_fields_bg.gif) no-repeat left 0}
+input.smallInputSize{padding:6px;width:42px;height:18px;border:none;background:#fff url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/form_fields_bg.gif) no-repeat left -68px}
+input.mediumInputSize{padding:6px;width:113px;height:18px;border:none;background:#fff url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/form_fields_bg.gif) no-repeat right -68px}
+input.largeInputSize{padding:6px;width:380px;height:18px;border:none;background:#fff url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/form_fields_bg.gif) no-repeat left -136px}
+textarea.defaultInputSize{width:244px;height:80px;padding:6px;border:none;background:#fff url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/form_fields_bg.gif) no-repeat left -205px;overflow:hidden;}
+a.VC-cancelButton:link,a.secondaryButton{text-decoration:none;border:none;color:#333;font-weight:bold}
+a.VC-cancelButton ins{text-decoration:none;border:none}
+.VC-cancelButton{cursor:pointer;line-height:25px;height:25px;background:url(/dafiles/Internet/mgl/com/furniture/images/buttons/button_bt.gif) no-repeat right -116px;padding-right:10px;display:inline-block}
+.VC-cancelButton ins{background:url(/dafiles/Internet/mgl/com/furniture/images/buttons/button_bt.gif) no-repeat 0 -116px;height:25px;line-height:25px;display:inline-block;padding-left:10px;word-wrap:normal}
+a.VC-cancelButton:hover{background-position:right -142px}
+a.VC-cancelButton:hover ins{background-position:0 -142px}
+a.VC-submitButton:link,a.VC-submitButton{text-decoration:none;border:none;color:#fff;font-weight:bold}
+a.VC-submitButton ins{text-decoration:none;border:none;color:#fff}
+.VC-submitButton{cursor:pointer;line-height:25px;height:25px;background:url(/dafiles/Internet/mgl/com/furniture/images/buttons/button_bt.gif) no-repeat right -64px;padding-right:10px;display:inline-block}
+.VC-submitButton ins{background:url(/dafiles/Internet/mgl/com/furniture/images/buttons/button_bt.gif) no-repeat 0 -64px;height:25px;line-height:25px;display:inline-block;padding-left:10px;word-wrap:normal}
+a.VC-submitButton:hover{background-position:right -90px}
+a.VC-submitButton:hover ins{background-position:0 -90px;color:#fff}
+.VC-pageToolsForm div.selectbox-wrapper{margin:0}
+.VC-pageToolsForm .selectbox{margin-bottom:0}
+label.checked {display:inline}
+/* Captcha styling */
+.VC-CaptchaContainer{background:url(/dafiles/Internet/mgl/com/furniture/images/backgrounds/form_fields_bg.gif) no-repeat left -405px; width:234px;position:relative;height:95px;padding:10px;z-index:10}
+.VC-captchaInput{position:absolute;bottom:0;left:5px; width:180px;padding:5px}
+.VC-CaptchaButtons{position:absolute;bottom:10px;left:148px;width:100px}
+/* Form validation styles */
+label.error {color: #dc1d00; font-weight: 700;font-size: 0.8em;display:block}
+.VC-pageToolsForm textarea.errorDefaultInputSize {background-position:left -305px}
+.VC-pageToolsForm input.errorDefaultInputSize{background-position:left -33px}
+.VC-pageToolsForm input.errorSmallInputSize{background-position:left -101px}
+.VC-pageToolsForm input.errorMediumInputSize{background-position:right -101px}
+.VC-pageToolsForm input.errorLargeInputSize{background-position:left -169px}
+
+/* === Contact us secure */
+.contactUs .phone{background:url(/dafiles/Internet/Furniture/Icon/mini_phone_icon.gif) no-repeat left top;padding-left:18px}
+.contactUs .email{background:url(/dafiles/Internet/Furniture/Icon/mini_email_icon.gif) no-repeat left top;padding-left:18px}
+
+/* === Contact Directory */
+.VC-contactDirectory ul li{list-style:none;list-style-image:none;width:100%}
+.VC-contactDirectory a{display:block;margin-bottom:5px;padding-bottom:0px;padding-top:25px}
+
+/* === Sitemap */
+.VC-sitemap li{list-style:none;padding:0px}
+.VC-sitemap .subTitle{font-weight:bold}
+.VC-sitemap .column1, .VC-sitemap .column2, .VC-sitemap .column3{float:left;width:33%}
+.VC-sitemap .personal, .VC-sitemap .business, .VC-sitemap .corporate, .VC-sitemap .adviser, .VC-sitemap .aboutMacquarie{clear:both}
+
+/* === Buttons */
+a.loginButton:link,a.loginButton{text-decoration:none;border:none;color:#fff;font-weight:bold}
+a.loginButton ins{text-decoration:none;border:none}
+.loginButton{cursor:pointer;line-height:31px;height:31px;background:url(/dafiles/Internet/mgl/com/furniture/images/buttons/button_bt.gif) no-repeat right 0px;padding-right:10px;display:inline-block}
+.loginButton ins{background:url(/dafiles/Internet/mgl/com/furniture/images/buttons/button_bt.gif) no-repeat 0 0;height:31px;line-height:31px;display:inline-block;padding-left:26px;word-wrap:normal}
+a.loginButton:hover{background-position:right -32px;color:#fff}
+a.loginButton:hover ins{background-position:0 -32px}
+
+a.primaryButton:link,a.primaryButton{text-decoration:none;border:none;color:#fff;font-weight:bold}
+a.primaryButton ins{text-decoration:none;border:none}
+.primaryButton{cursor:pointer;line-height:25px;height:25px;background:url(/dafiles/Internet/mgl/com/furniture/images/buttons/button_bt.gif) no-repeat right -64px;padding-right:10px;display:inline-block}
+.primaryButton ins{background:url(/dafiles/Internet/mgl/com/furniture/images/buttons/button_bt.gif) no-repeat 0 -64px;height:25px;line-height:25px;display:inline-block;padding-left:10px;word-wrap:normal}
+a.primaryButton:hover{background-position:right -90px;color:#fff}
+a.primaryButton:hover ins{background-position:0 -90px}
+
+a.secondaryButton:link,a.secondaryButton{text-decoration:none;border:none;color:#333;font-weight:bold}
+a.secondaryButton ins{text-decoration:none;border:none}
+.secondaryButton{cursor:pointer;line-height:25px;height:25px;background:url(/dafiles/Internet/mgl/com/furniture/images/buttons/button_bt.gif) no-repeat right -116px;padding-right:10px;display:inline-block}
+.secondaryButton ins{background:url(/dafiles/Internet/mgl/com/furniture/images/buttons/button_bt.gif) no-repeat 0 -116px;height:25px;line-height:25px;display:inline-block;padding-left:10px;word-wrap:normal}
+a.secondaryButton:hover{background-position:right -142px}
+a.secondaryButton:hover ins{background-position:0 -142px}
+
+a.secondaryButtonWithPhone:link,a.secondaryButtonWithPhone{text-decoration:none;border:none;color:#333;font-weight:bold}
+a.secondaryButtonWithPhone ins{text-decoration:none;border:none}
+.secondaryButtonWithPhone{cursor:pointer;line-height:25px;height:25px;background:url(/dafiles/Internet/mgl/com/furniture/images/buttons/button_bt.gif) no-repeat right -168px;padding-right:13px;display:inline-block}
+.secondaryButtonWithPhone ins{background:url(/dafiles/Internet/mgl/com/furniture/images/buttons/button_bt.gif) no-repeat 0 -168px;height:25px;line-height:25px;display:inline-block;padding-left:30px;word-wrap:normal}
+a.secondaryButtonWithPhone:hover{background-position:right -194px}
+a.secondaryButtonWithPhone:hover ins{background-position:0 -194px}
+
+/* === Preset filter for Advisers - Quick Start */
+.VC-mainContent .presetFilterAdvisers td{border:none;padding:6px}
+.VC-mainContent .presetFilterAdvisers table{border:none;border-bottom:1px solid #d9d9d9;background:url(/dafiles/Internet/mgl/au/advisers/furniture/images/backgrounds/product_finder_bg.gif) repeat-x bottom}
+.VC-mainContent .presetFilterAdvisers h3{border-bottom:#d9d9d9 solid 1px;margin-bottom:5px;padding-bottom:6px}
+
+/* === Product detail */
+.tabs-hide{display:none}
+ul.tabs-nav, ul.tabs-nav li{list-style:none;margin:0;padding:0}
+.tabs-nav:after{display:block;clear:both;content:" "}
+ul.tabs-nav li{float:left;margin:0 2px 0 0;list-style-image:none}
+.tabs-nav a,.tabs-nav a span{display:block;background:url(/dafiles/Internet/mgl/com/furniture/images/buttons/tab_bt.gif) no-repeat;padding:0 10px}
+.tabs-nav a{position:relative;top:1px;z-index:2;padding-left:0;color:#666;line-height:1.5;text-align:center;text-decoration:none;white-space:nowrap;border-bottom:none}
+.tabs-nav .tabs-selected a{color:#000;background-position:100% -150px;outline:0}
+.tabs-nav .tabs-selected a:hover,.tabs-nav .tabs-selected a:focus,.tabs-nav .tabs-selected a:active{text-decoration:none}
+.tabs-nav a{background-position:100% -100px}
+.tabs-nav a span{color:#666;width:20px;height:22px;min-height:22px;padding-top:6px;padding-right:0}
+*>.tabs-nav a span{width:auto;height:auto}
+.tabs-nav .tabs-selected a span{background-position:0 -50px;padding-top:7px}
+.tabs-nav .tabs-selected a span,.tabs-nav a:hover span,.tabs-nav a:focus span,.tabs-nav a:active span{color:#1c1c1c}
+.tabs-nav a span,.tabs-nav .tabs-disabled a:hover span,.tabs-nav .tabs-disabled a:focus span,.tabs-nav .tabs-disabled a:active span{background-position:0 0}
+.tabs-nav .tabs-selected a:link,.tabs-nav .tabs-selected a:visited,.tabs-nav .tabs-disabled a:link,.tabs-nav .tabs-disabled a:visited{cursor:text}
+.tabs-nav a:hover,.tabs-nav a:focus,.tabs-nav a:active{cursor:pointer;color:#000;text-decoration:underline}
+.tabs-nav .tabs-disabled{opacity:.4}
+.tabs-container{border-top:1px solid #b8b8b8;background:#fff;padding:1em 8px}
+.tabs-container h2 {margin-bottom:10px}
+.VC-mainContent ul.tabs-nav li{padding-bottom:0}
+div.VC-subH1 a.primaryButton:link, a.primaryButton{margin-right:6px}
+div.VC-subH1 a.secondaryButtonWithPhone:link, a.secondaryButtonWithPhone{margin-left:7px}
+.VC-mainContent p.productAction{font-size:1.1666em;color:#000;font-weight:700}
+
+/* Expand and collapse functionality */
+.VC-pageBody a.VC-expandCollapseButton{text-decoration:none;border:none}
+.VC-pageBody a.VC-expandCollapseButton ins{text-decoration:none;height:15px;background:url(/dafiles/Internet/mgl/com/furniture/images/icons/expand_collapse_icon.gif) no-repeat left top;padding:0px 8px 0px 8px;margin-right:3px;font-size:12px}
+.VC-pageBody a.VC-expandCollapseButton:hover ins{background-position:left -15px}
+.VC-pageBody a.VC-expandCollapseButton h4{display:inline;color:#707070;font-weight:normal;}
+.VC-pageBody a.VC-expandCollapseButton:hover h4{border-bottom-color:#000}
+.VC-pageBody a.VC-expandCollapseButtonExpanded ins{background-position:left -30px}
+.VC-pageBody a.VC-expandCollapseButtonExpanded:hover ins{background-position:left -45px}
+.VC-pageBody .VC-expandCollapseButtonWrapper{margin-bottom:5px}
+.VC-pageBody .VC-expandCollapse{margin-bottom:8px;padding-left:22px}
+.VC-pageBody .VC-expandCollapseTitle{padding:15px 0px 10px 0px}
+
+
+
+/* Print CSS */
+@media print{
+	*{overflow: visible !important}
+	*{float: none !important}
+	h1{width:100%}
+	.VC-siteWideHeader,.VC-productFinder,.VC-searchResults .alignRight,.VC-navigation, .VC-featureColumn, .VC-breadcrumbs,.VC-breadcrumb, .VC-featureColumn .featureColumnElement .RHS-Login, .VC-featureColumn .featureColumnElement .RHS-ResearchAndInsights, .researchInsights .elementBody, .VC-featureColumn .featureColumnElement .RHS-WhatDoYouThink, .whatDoYouThink, .RHS-ResearchAndInsights, .RHS-Login, .VC-featureColumn .featureColumnElement .RHS-QuickLinks, .RHS-QuickLinks, .RHS-WhatDoYouThink, .ui-tabs-hide, .ui-tabs .ui-tabs-nav, .VC-pagination, .VC-pagetools, #TB_overlay, #TB_window, #TB_ajaxContent, .TB_modal, #tooltip, .VC-fontResizeTool, .VC-siteWideLogin, .VC-leftNavigation,.VC-pagetools, .backToTopLink,.primaryButton,.secondaryButtonWithPhone,.VC-featureColumn .featureColumnElement .RHS-ContactUs .elementBody .contactUs,.RHS-ContactUs, div.VC-lowerHeader .screenLogo, .VC-footer .upperFooter .footerLinks, .VC-mainContent .VC-tabModule .tabs-nav, #VC-HP-Promo2, #VC-HP-Promo3{display:none !important}
+	.VC-container, .VC-page{display:inline;width:100%;margin:0;text-wrap:unrestricted !important}
+	.VC-container .VC-page .VC-header .VC-lowerHeader .VC-logo .printLogo{display:inline;float:left;clear:both !important}
+	.VC-container .VC-page .VC-header .VC-lowerHeader .VC-logo, .VC-logo img{display:block !important;float:left  !important}
+	.VC-container .VC-page .VC-pageBody .VC-mainContent .VC-promoHomeSlideShow #VC-HP-Promo1, #VC-HP-Promo2, #VC-HP-Promo3{display:block !important;float:left !important;top:130px !important}
+	.VC-mainContent{width:100%;margin:0;display:block !important}
+	.VC-mainContent .advisersPromo{width:100%;margin:0;display:block !important}
+	.VC-mainContent .leftcolumn{display:inline;width:378px;height:auto;padding:0;margin-right:1em !important}
+	.VC-mainContent .rightcolumn{display:block;width:206px;height:auto;padding:0;margin-left:1em !important}
+	.VC-footer{width:100%;display:inline;margin:0}
+	.VC-footer .lowerFooter{width:100%;padding:0}
+	.VC-footer .lowerFooter .productDisclaimer{display:block;margin:0;padding:0;float:none;text-wrap:unrestricted;text-align:left;clear:both;content:" " !important}
+	.lowerFooter, .portalDisclaimer P, body, .VC-container, .VC-page, .VC-pageBody{width:100%;background-color:#fff;margin:0 !important}
+	.VC-tabModule .tabs-container{background-color:#fff;display:block;clear:both;content:" " !important}
+	.promotionsPods{position:relative !important}	
+}
