@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!-->
+<html class=" js no-flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script src="Bus%20Booking%20-%20Book%20Bus%20Tickets%20Online%20at%20Abhibus.com_files/9a92da41e4" type="text/javascript"></script><script src="Bus%20Booking%20-%20Book%20Bus%20Tickets%20Online%20at%20Abhibus.com_files/nr-686.js"></script><script src="Bus%20Booking%20-%20Book%20Bus%20Tickets%20Online%20at%20Abhibus.com_files/atrk.js" async="" type="text/javascript"></script><script src="Bus%20Booking%20-%20Book%20Bus%20Tickets%20Online%20at%20Abhibus.com_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQYAUVNVCRABVFdWBQkPXw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=t("ee").create(),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-686.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+
+    <title>Bus Booking - Book Bus Tickets Online at Danfo ticket.com</title>
+    <meta name="description" content="Book with us for great discounts on online bus tickets booking. Get bus tickets online to various destinations with simple &amp; easy booking process.">
+    <meta name="keywords" content="online bus booking, bus booking online, bus tickets online, bus reservation online, online bus ticket booking">
+    <meta name="viewport" content="width=device-width">
+    <link rel="canonical" href="http://www.abhibus.com/"> 
+	<link rel="alternate" media="handheld" href="http://www.abhibus.com/mobile/"> 
+	<link rel="alternate" media="only screen and (max-width:640px)" href="http://www.abhibus.com/mobile/">
+    <link rel="icon" href="http://www.abhibus.com/favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="Bus%20Booking%20-%20Book%20Bus%20Tickets%20Online%20at%20Abhibus.com_files/style.css">
+	<link type="text/css" rel="stylesheet" href="Bus%20Booking%20-%20Book%20Bus%20Tickets%20Online%20at%20Abhibus.com_files/jquery-ui.css">
+	<link href="Bus%20Booking%20-%20Book%20Bus%20Tickets%20Online%20at%20Abhibus.com_files/css.css" rel="stylesheet" type="text/css">
+	<script src="Bus%20Booking%20-%20Book%20Bus%20Tickets%20Online%20at%20Abhibus.com_files/master.js" type="text/javascript" language="JavaScript"></script>
+	<script type="text/javascript">
+	var mouse_is_insidecc="";
+      $(document).ready(function() {
+        $('.Log-popbox').popbox();
+        $(".open").click(function() {
+          $("#LoginPop").load("http://www.abhibus.com/account/sign_in_pop");
+        });
+		$('.selectBoxdcc').hover(function(){
+		mouse_is_insidecc=true;
+		}, function(){
+		mouse_is_insidecc=false;
+		});
+
+		$("html").click(function () {
+		if(! mouse_is_insidecc){ $('div.selectOptionscc').css('display','none');
+			$(".showcc").show();
+			$(".hidecc").hide();
+		}
+		});
+      });
+      function signINhere()
+      {
+        $('.Log-popbox').popbox();
+        $(".open").click(function() {
+          $("#LoginPop").load("http://www.abhibus.com/account/sign_in_pop");
+        });
+      }
+    </script>
+    
+  <!-- ADDED ON JUNE 28th  GOOGLE ANALYTICS-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-6315501-1']);
+  _gaq.push(['_setDomainName', 'abhibus.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript"> 
+function recordOutboundLink(link, category, action) { 
+_gat._getTrackerByName()._trackEvent(category, action); 
+} 
+</script> 
+
+<!-- END OF GOOGLE ANALYTICS-->
+ 
+  </head>
+  <body>
+     <!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"W6Foi1awA+00w7", domain:"abhibus.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=W6Foi1awA+00w7" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<!-- Header section  -->
+<header><div class="topHeader wrap">
+	<div class="welcomeNote" id="AccLogin"> 
+	 	<span>Hello there,</span> <span style="width: 230px;" class="Log-popbox"><a class="open" href="javascript:" data-fancybox-group="gallery">Join in</a> to travel easy
+            <div class="Log-box" style="display: none;">
+              <div class="Log-arrow"></div>
+              <div class="Log-arrow-border"></div>
+              <div id="LoginPop" style="position:relative; height:280px; width: 230px;"></div>
+            </div>
+          </span>
+    	</div>
+	 <marquee style="margin-left:210px; width:220px; position:absolute; margin-top:6px; ">
+<img src="images/brand/logo_2.png">
+    </marquee>
+    
+	<div class="links">
+      <a href="http://www.abhibus.com/">Home</a>
+      <a href="http://www.abhibus.com/myticket">Print Ticket</a> 
+      <a href="http://www.abhibus.com/cancellation">Cancel Ticket</a>
+
+  </div>
+  
+  <div class="cc_no selectBoxdcc contctdrop">
+	<a href="javascript:void(0);" class="selectArrowcc"><span id="cCare_city">Lagos</span> 
+	<strong>&nbsp;&nbsp;&nbsp;&nbsp;<span id="cCare_no">07060000234</span></strong></a>
+		<span class="selectArrowcc">
+		<span class="showcc" style="display: inline;">▼</span>
+		<span style="display: none" class="hidecc">X</span>
+		</span>
+		<div class="selectOptionscc" style="display:none">
+			<ul>
+			<li><label class="selectOptioncc" cityval="Bangalore" callval="1860 200 9999">Port Harcourt - 1860 200 9999</label></li>
+			<li><label class="selectOptioncc" cityval="Chennai" callval="1860 200 9999">FCT - 1860 200 9999</label></li>
+			<li><label class="selectOptioncc" cityval="Delhi" callval="1860 200 9999">Benin - 1860 200 9999</label></li>
+			<li><label class="selectOptioncc" cityval="Hyderabad" callval="(040) 33 66 77 99">Bayelsa - (040) 33 66 77 99</label></li>
+			<li><label class="selectOptioncc" cityval="Kolkata" callval="1860 200 9999">Owerri - 1860 200 9999</label></li>
+			<li><label class="selectOptioncc" cityval="Mumbai" callval="1860 200 9999">Ibadan - 1860 200 9999</label></li>
+			<li><label class="selectOptioncc" cityval="Pune" callval="1860 200 9999">Delta - 1860 200 9999</label></li>
+			<li><label class="selectOptioncc" cityval="Vijayawada" callval="(040) 33 66 77 99">Enugu - (040) 33 66 77 99</label></li>
+			</ul>
+		</div>
+         
+</div>
+  
+</div> 
+</header><!-- Header section end  -->
+<div class="mainheader">
+
+	<div class="wrap">
+		<img src="Bus%20Booking%20-%20Book%20Bus%20Tickets%20Online%20at%20Abhibus.com_files/logo2.png">
+				<form action="http://www.abhibus.com/register" accept-charset="utf-8" name="frmFinal" id="frmFinal" method="POST">		<h1>Search for bus tickets</h1>
+		<span href="javascript:" class="twowaychang"></span>
+		
+		<div class="searchFields clearfix">
+			
+			<div class="field field1">
+				<select autocomplete="off" name="source" id="source" class="textBox fromTxt ico ui-autocomplete-input" tabindex="1" value="Goa" onfocus="if(this.value=='Enter a city or local area')this.value='';" onblur="if(this.value=='')this.value='Enter a city or local area';" type="text">
+					<option value="Abia">Abia</option>
+					<option value="Adamawa">Adamawa</option>
+					<option value="AkwaIbom ">Akwa Ibom </option>
+					<option value="Anambra ">Anambra </option>
+					<option value="Anambra ">Bauchi </option>
+					<option value="Anambra ">Bayelsa </option>
+					<option value="Anambra ">Benue </option>
+					<option value="Anambra ">Borno </option>
+					<option value="Anambra ">Cross River</option>
+					<option value="Anambra ">Delta </option>
+					<option value="Anambra ">Ebonyi </option>
+					<option value="Anambra ">Edo</option>
+					<option value="Anambra ">Ekiti  </option>
+					<option value="Anambra ">Enugu </option>
+					<option value="Anambra ">Gombe </option>
+					<option value="Anambra ">Imo </option>
+					<option value="Anambra ">Jigawa </option>
+					<option value="Anambra ">Kaduna </option>
+					<option value="Anambra ">Kano </option>
+					<option value="Anambra ">Katsina </option>
+					<option value="Anambra ">Kebbi </option>
+					<option value="Anambra ">Kogi </option>
+					<option value="Anambra ">Kwara </option>
+					<option value="Anambra ">Lagos </option>
+					<option value="Anambra ">Nassarawa </option>
+					<option value="Anambra ">Niger </option>
+					<option value="Anambra ">Ogun </option>
+					<option value="Anambra ">Ondo </option>
+					<option value="Anambra ">Osun </option>
+					<option value="Anambra ">Oyo </option>
+					<option value="Anambra ">Plateau </option>
+					<option value="Anambra ">Rivers </option>
+					<option value="Anambra ">Sokoto </option>
+					<option value="Anambra ">Taraba </option>
+					<option value="Anambra ">Yobe </option>
+					<option value="Anambra ">Zamfara </option>
+				</select>
+			<input id="source_id" name="source_id" value="102" type="hidden">
+			</div>
+			<div class="field field2">		
+				 <select autocomplete="off" name="destination" id="destination" class="textBox toTxt ico ui-autocomplete-input" tabindex="2" value="Mumbai" onfocus="if(this.value=='Enter a city or local area')this.value='';" onblur="if(this.value=='')this.value='Enter a city or local area';" type="text">
+					<option value="Abia">Abia</option>
+					<option value="Adamawa">Adamawa</option>
+					<option value="AkwaIbom ">Akwa Ibom </option>
+					<option value="Anambra ">Anambra </option>
+					<option value="Anambra ">Bauchi </option>
+					<option value="Anambra ">Bayelsa </option>
+					<option value="Anambra ">Benue </option>
+					<option value="Anambra ">Borno </option>
+					<option value="Anambra ">Cross River</option>
+					<option value="Anambra ">Delta </option>
+					<option value="Anambra ">Ebonyi </option>
+					<option value="Anambra ">Edo</option>
+					<option value="Anambra ">Ekiti  </option>
+					<option value="Anambra ">Enugu </option>
+					<option value="Anambra ">Gombe </option>
+					<option value="Anambra ">Imo </option>
+					<option value="Anambra ">Jigawa </option>
+					<option value="Anambra ">Kaduna </option>
+					<option value="Anambra ">Kano </option>
+					<option value="Anambra ">Katsina </option>
+					<option value="Anambra ">Kebbi </option>
+					<option value="Anambra ">Kogi </option>
+					<option value="Anambra ">Kwara </option>
+					<option value="Anambra ">Lagos </option>
+					<option value="Anambra ">Nassarawa </option>
+					<option value="Anambra ">Niger </option>
+					<option value="Anambra ">Ogun </option>
+					<option value="Anambra ">Ondo </option>
+					<option value="Anambra ">Osun </option>
+					<option value="Anambra ">Oyo </option>
+					<option value="Anambra ">Plateau </option>
+					<option value="Anambra ">Rivers </option>
+					<option value="Anambra ">Sokoto </option>
+					<option value="Anambra ">Taraba </option>
+					<option value="Anambra ">Yobe </option>
+					<option value="Anambra ">Zamfara </option>
+				</select>
+            <input id="destination_id" name="destination_id" value="4" type="hidden">
+			</div>
+			<div id="roundTrip" style="display:;">
+				<div class="field noMargin">			
+					<input name="journey_date" id="datepicker1" class="calendar1 hasDatepicker" tabindex="3" value="Date of Journey" readonly="readonly" type="text">
+					<input name="journey_rdate" id="datepicker2" class="calendar2 hasDatepicker" value="Date of Return (optional)" readonly="readonly" type="text">
+				</div>
+				<span id="errormsgHome">&nbsp;</span>
+				<a onclick="javascript:validateSearch();" title="Search Buses" tabindex="4" href="javascript:void(0)" class="btnab icosearch">Search</a>
+			</div>
+		</div>
+	</form></div>
+	 
+	</div>
+
+
+
+<div class="homeblock">
+	<div class="home wrap clearfix">
+	 <a href="http://www.abhibus.com/mobileapps"> </a><div class="col1"><a href="http://www.abhibus.com/mobileapps">
+<div class="ico mobileapp">     	</div>        
+
+ </a><a href="http://www.abhibus.com/mobileapps" class="btn">Book on our Mobile App &amp; get Flat Rs.50/- off.</a>
+	   </div>
+	   
+	   <a href="http://www.indiabusawards.com/" target="_blank">
+	<div class="col2">
+	<div id="rotator"> 
+     <div class="images"><div style="margin-left: 0px;" class="imageHolder slide13"></div><div style="margin-left: 0px;" class="imageHolder slide12"></div><div style="margin-left: 0px;" class="imageHolder slide11"></div><div style="margin-left: 0px;" class="imageHolder slide10"></div><div style="margin-left: 0px;" class="imageHolder slide9"></div><div style="margin-left: 0px;" class="imageHolder slide8"></div><div style="margin-left: 0px;" class="imageHolder slide7"></div><div style="margin-left: 0px;" class="imageHolder slide6"></div><div style="margin-left: 0px;" class="imageHolder slide5"></div><div style="margin-left: 0px;" class="imageHolder slide4"></div><div style="margin-left: 0px;" class="imageHolder slide3"></div><div style="margin-left: 0px;" class="imageHolder slide2"></div>
+     <div class="imageHolder slide1"></div>    
+     <div class="imageHolder slide16"></div>
+     <div class="imageHolder slide15"></div>
+     <div class="imageHolder slide14"></div>
+     
+     
+         
+     
+     
+     
+     
+     
+     
+     
+      
+     
+      </div>
+    </div>
+	</div>
+	</a>
+	<div class="col3">
+		<div class="block clearfix">
+		<div class="advantage">
+			<div id="slider1">
+                <div class="viewport">
+                    <ul style="width: 1026px; left: -545.57px;" class="overview">
+	                     <li><a href="http://www.abhibus.com/roulette"><img src="Bus%20Booking%20-%20Book%20Bus%20Tickets%20Online%20at%20Abhibus.com_files/home-banner-seat-roulette.jpg"></a></li>
+	                     <li><a href="http://www.abhibus.com/apsrtc"><img src="Bus%20Booking%20-%20Book%20Bus%20Tickets%20Online%20at%20Abhibus.com_files/slide-right2.jpg"></a></li>
+                      <li class="mirrored"><a href="http://www.abhibus.com/roulette"><img src="Bus%20Booking%20-%20Book%20Bus%20Tickets%20Online%20at%20Abhibus.com_files/home-banner-seat-roulette.jpg"></a></li></ul>
+                </div>
+                <ul class="bullets">
+                     <li><a href="#" class="bullet active" data-slide="0">1</a></li>
+                     <li><a href="#" class="bullet" data-slide="1">2</a></li>
+                </ul>
+			  </div>
+            </div>
+
+		</div>
+	</div>
+	 
+</div>
+
+
+	<div class="home wrap social">
+		<h2><span>We’re Social!</span> Connect with us on <a href="http://www.facebook.com/abhibus" onclick="recordOutboundLink(this, 'OutboundLinks', 'Facebook.com/abhibus');window.open(this.href);return false;" title="Abhibus.com on Facebook" class="facebook">Facebook</a>, <a href="http://twitter.com/abhibus" onclick="recordOutboundLink(this, 'OutboundLinks', 'Twitter.com/abhibus'); window.open(this.href); return false;" title="Abhibus.com on Twitter" class="twitter">Twitter</a>, <a href="http://plus.google.com/+abhibus" onclick="window.open(this.href); return false;" title="Abhibus.com on Google Plus" class="googleplus">Google+</a> and <a href="http://www.youtube.com/user/abhibus" onclick="window.open(this.href); return false;" title="Abhibus.com on YouTube" class="youtube">Youtube</a></h2>
+	</div>
+
+</div>
+<script type="text/javascript">
+		$(document).ready(function()
+		{			
+			$('#slider1').tinycarousel({axis: "x", infinite: true, animation: true, bullets: true, start: 0});
+		});
+	</script>
+<div class="mainfooter">
+	<div class="wrap clearfix">
+		<div class="col1">
+			<h3>Recently Booked</h3>
+			<ul>
+ <li><a href="javascript:;" onclick="fillRoute(1,'Goa' ,'Mumbai' );">Goa - Mumbai</a></li><li><a href="javascript:;" onclick="fillRoute(1,'Chennai' ,'Vijayawada' );">Chennai - Vijayawada</a></li><li><a href="javascript:;" onclick="fillRoute(1,'Hyderabad' ,'Chennai' );">Hyderabad - Chennai</a></li><li><a href="javascript:;" onclick="fillRoute(1,'Hyderabad' ,'Shirdi' );">Hyderabad - Shirdi</a></li><li><a href="javascript:;" onclick="fillRoute(1,'Guntur' ,'Hyderabad' );">Guntur - Hyderabad</a></li><li><a href="javascript:;" onclick="fillRoute(1,'Chennai' ,'Madurai' );">Chennai - Madurai</a></li><li><a href="javascript:;" onclick="fillRoute(1,'Bangalore' ,'Hyderabad' );">Bangalore - Hyderabad</a></li>  </ul>         
+
+		</div>
+		<div class="col1">
+			<h3>Popular Routes</h3>
+			  <ul>
+    <li><a href="http://www.abhibus.com/buses/1/Hyderabad-Bangalore">Benin - Warri</a> </li>
+    <li><a href="http://www.abhibus.com/buses/58/Pune-Shirdi">Pune - Shirdi</a> </li>
+    <li><a href="http://www.abhibus.com/buses/24/Chennai-Coimbatore">Chennai - Coimbatore</a> </li>
+    <li><a href="http://www.abhibus.com/buses/8/Hyderabad-Visakhapatnam">Hyderabad - Visakhapatnam</a> </li>
+    <li><a href="http://www.abhibus.com/buses/10/Bangalore-Hyderabad">Bangalore - Hyderabad</a> </li>
+    <li><a href="http://www.abhibus.com/buses/17/Bangalore-Vijayawada">Bangalore - Vijayawada</a> </li>
+    <li><a href="http://www.abhibus.com/buses/3/Hyderabad-Chennai">Hyderabad - Chennai</a> </li>
+  </ul>
+		</div>
+		<div class="col3">
+			<h3>Popular Bus Operators</h3>
+	<a href="http://www.abhibus.com/operator/919/APSRTC">APSRTC</a> 
+    <a href="http://www.abhibus.com/operator/2/SVR-Travels">SVR Travels</a>
+    <a href="http://www.abhibus.com/operator/20/VRL-Travels">VRL Travels</a>
+    <a href="http://www.abhibus.com/operator/24/KPN-Travels">KPN Travels</a>
+    <a href="http://www.abhibus.com/operator/7/Kaveri-Travels">Kaveri Travels </a>
+    <a href="http://www.abhibus.com/operator/3/Kallada-Travels">Kallada Travels </a>
+    <a href="http://www.abhibus.com/operator/8/Sreekaleswari-Travels">Kaleswari Travels</a>
+    <a href="http://www.abhibus.com/operator/19/Neeta-Travels">Neeta Travels </a>
+    <a href="http://www.abhibus.com/operator/5/Diwakar-Travels">Diwakar Travels </a>
+    <a href="http://www.abhibus.com/operator/23/Kesineni-Travels">Kesineni Travels </a>
+    <a href="http://www.abhibus.com/operator/90/Shree-Khurana-Travels">Khurana Travels</a>
+    <a href="http://www.abhibus.com/operator/48/SRS-Travels">SRS Travels </a>
+    <a href="http://www.abhibus.com/operator/25/Paulo-Travels">Paulo Travels</a>
+    <a href="http://www.abhibus.com/operator/57/Meghana-Travels" class="nobar">Meghana Travels</a>
+    <a href="http://www.abhibus.com/operator/36/Morning-Star-Travels">Morning Star Travels</a>
+    <a href="http://www.abhibus.com/operator/17/Royal-Cruiser-Travels">Royal Cruiser Travels</a> 
+    <a href="http://www.abhibus.com/operator/76/SRE-Travels">SRE Travels</a> 
+    <a href="http://www.abhibus.com/operator/44/SRM-Travels" class="nobar">SRM Travels</a> 
+    <a href="http://www.abhibus.com/operator/29/Orange-Travels">Orange Travels</a>    
+    <a href="http://www.abhibus.com/operator/9/Rajesh-Travels"> Rajesh Travels</a>
+    <a href="http://www.abhibus.com/operator/51/HKB-Travels"> HKB Travels</a>
+    <a href="http://www.abhibus.com/operator/646/Rathimeena-Travels" class="nobar">Rathimeena Travels</a>
+    <a href="http://www.abhibus.com/operator/12/Shambhavi-Travels">Shambhavi Travels </a>
+    <a href="http://www.abhibus.com/operator/6/Omer-Travels">Omer Travels </a>
+    <a href="http://www.abhibus.com/operator/11/Jabbar-Travels">Jabbar Travels </a>   
+    <a href="http://www.abhibus.com/operator/42/Seabird-Travels"> Seabird Travels</a>
+    <a href="http://www.abhibus.com/operator/69/Navin-Travels" class="nobar">Navin Travels  </a>
+    <a href="http://www.abhibus.com/operator/37/National-Travels"> National Travels </a>
+    <a href="http://www.abhibus.com/operator/10/Pavit-Travels">Pavit</a>
+    <a href="http://www.abhibus.com/operator/32/Geepee"> Geepee  </a>   
+    <a href="http://www.abhibus.com/operator/64/JBT-Travels"> Jai Bharat </a>
+    <a href="http://www.abhibus.com/operator/28/Bharathi-Travels">  Bharathi </a>
+			
+		</div>
+	</div>
+</div>
+<script src="Bus%20Booking%20-%20Book%20Bus%20Tickets%20Online%20at%20Abhibus.com_files/validation.js" type="text/javascript" language="JavaScript"></script>
+<script src="Bus%20Booking%20-%20Book%20Bus%20Tickets%20Online%20at%20Abhibus.com_files/stations_script.js" type="text/javascript" language="JavaScript"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#slider-code').tinycarousel({ axis: 'y' });
+		$('#slider-banner').tinycarousel({ axis: 'x' });
+			});
+	</script> <footer>
+  <div class="wrap clearfix"><div class="company">
+  <a class="ico logosmall"></a> 
+  <a href="http://www.abhibus.com/operators">Operators</a>  
+  <a href="http://www.abhibus.com/routes">Routes</a>  
+  <a href="http://www.abhibus.com/bus-ticket-offers">Offers</a> 
+  <a href="http://www.abhibus.com/mobileapps">Mobile </a>  
+  <a href="http://www.abhibus.com/about">About Us</a>  
+  <a href="http://www.abhibus.com/in-the-news">News</a>   
+  <a href="http://www.abhibus.com/careers">Careers</a>
+  <a href="http://www.abhibus.com/contact">Contact Us</a> 
+
+  </div>
+ 
+  <div class="links">
+    <a href="http://www.abhibus.com/faq">FAQs</a><a href="http://www.abhibus.com/terms">Terms</a><a href="http://www.abhibus.com/privacy">Privacy</a><a href="https://agent.abhibus.com/">Agent Login</a>
+  </div></div>
+
+</footer>
+
+
+     <div class="copyright">
+	<div class="wrap clearfix">
+	<div class="copy">
+	<p>Copyright © Danfo Tickets Ltd. All Rights Reserved.</p>
+</div>	
+<div class="privacy">
+	<a href="http://www.abhibus.com/insurance" class="ico insurance"></a>
+		<a href="jscript:" onclick="window.open('https://sealinfo.verisign.com/splash?form_file=fdf/splash.fdf&amp;sealid=1&amp;dn=www.abhibus.com&amp;lang=en','','width=540,height=460,scrollbars=1'); return false;" class="ico paymentsec"></a>
+	<span class="ico paygateway"></span>
+</div>
+	</div>
+</div>
+
+
+<!-- JavaScript at the bottom for fast page loading -->
+  <script src="Bus%20Booking%20-%20Book%20Bus%20Tickets%20Online%20at%20Abhibus.com_files/stations_script_online.js" type="text/javascript" language="JavaScript"></script>
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories.
+--------------------------------------------------->
+<script type="text/javascript">
+var google_tag_params = {
+flight_originid : '', 
+flight_destid : '', 
+flight_startdate : '', 
+flight_enddate : '', 
+flight_pagetype: 'homepage'
+};
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 988852341;
+var google_conversion_label = "Mrl2CIOSyg0Q9eDC1wM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="Bus%20Booking%20-%20Book%20Bus%20Tickets%20Online%20at%20Abhibus.com_files/conversion.js"></script><iframe name="google_conversion_frame" title="Google conversion frame" src="Bus%20Booking%20-%20Book%20Bus%20Tickets%20Online%20at%20Abhibus.com_files/a.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" frameborder="0" height="13" width="300">&lt;img
+ height="1" width="1" border="0" alt="" 
+src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/988852341/?frame=0&amp;random=1441969962061&amp;cv=8&amp;fst=1441969962061&amp;num=1&amp;fmt=1&amp;label=Mrl2CIOSyg0Q9eDC1wM&amp;guid=ON&amp;u_h=768&amp;u_w=1366&amp;u_ah=738&amp;u_aw=1366&amp;u_cd=24&amp;u_his=2&amp;u_tz=60&amp;u_java=false&amp;u_nplug=11&amp;u_nmime=31&amp;data=flight_originid%3D%3Bflight_destid%3D%3Bflight_startdate%3D%3Bflight_enddate%3D%3Bflight_pagetype%3Dhomepage&amp;frm=0&amp;url=http%3A//www.abhibus.com/"
+ /&gt;</iframe>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/988852341/?value=0&amp;label=Mrl2CIOSyg0Q9eDC1wM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"9a92da41e4","applicationID":"10642889","transactionName":"MlUAYEBZXUFWAhcIDAsfI1dGUVxcGCABCQoMXgZRShdaXFMEGw==","queueTime":0,"applicationTime":29,"atts":"HhIDFghDTk8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-686.min.js"}</script>
+ 
+<ul style="display: none;" tabindex="0" id="ui-id-1" class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content"></ul><span class="ui-helper-hidden-accessible" aria-relevant="additions" aria-live="assertive" role="status"></span><ul style="display: none;" tabindex="0" id="ui-id-2" class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content"></ul><span class="ui-helper-hidden-accessible" aria-relevant="additions" aria-live="assertive" role="status"></span><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>
