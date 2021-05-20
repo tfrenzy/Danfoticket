@@ -1,2 +1,2 @@
 # Danfoticket
-This project is for a personal ticket purchase service
+A project to enable users to purchase tickets from the major transport providers from the comfort of their homes or wherever they find themselves. The project had support for two set of users, basic users who could specify the routes they wanted to travel and see what bus tickets were available for their chosen routes and the admin users responsible for posting available bus companies and tickets to the site. The project is implemented utilising PHP as the main backbone, and a mySQL database for backend operations. 
